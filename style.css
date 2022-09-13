@@ -1,0 +1,74 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+
+
+.header{
+  background-color: blue;
+  color : white;
+  text-align: center;
+  padding : 20px;
+}
+
+.nav_menu{
+  display: flex;
+  justify-content: space-around;
+  padding : 20px;
+}
+.nav_menu li:hover{
+  color: white;
+  text-shadow: 1px 1px 2px darkblue;
+  transition-duration: 300ms;
+}
+
+.main{
+  margin : 20px;
+}
+.section1, .section2, .section3{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding : 20px;
+}
+.section1{
+  float: left;
+}
+.section2, .section3{
+  margin : 10px 10px 10px 380px;
+}
+.section2 h2{
+  border-bottom: 1px dashed gray;
+}
+
+.section3 > p::after{
+  content: "N";
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+.footer{
+  clear: both;
+  background-color: lightgray;
+  text-align: center;
+  padding : 10px;
+}
+
+@media (max-width:576px){
+  .section1{
+    margin-bottom: 10px;
+  }
+  .section2, .section3{
+    clear: both;
+    margin : 10px;
+  }
+
+}
